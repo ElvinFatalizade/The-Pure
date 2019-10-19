@@ -1,0 +1,430 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Mirrored from demo.codinbit.com/thepure/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Oct 2019 09:26:18 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="Premium HTML5 Template" />
+    <meta name="description" content="ThePure - Responsive Bootstrap Classified Ads HTML Template" />
+    <meta name="author" content="CodinBit.com" />
+    <title>ThePure - Responsive Bootstrap Classified Ads HTML Template</title>
+
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/font-awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/flags2/flag-css.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/ekko-lightbox/ekko-lightbox.css" />
+
+    <link rel="stylesheet" type="text/css" href="~/Public/css/style.css">
+</head>
+<body>
+    <div class="page-loader loading">
+        <div class="loader">
+            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="overlay-nav"></div>
+
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row justify-content-center align-self-center h-100">
+                    <div class="col-6 col-md-5 my-auto">
+                        <ul>
+                            <li><strong>Location:Uk</strong></li>
+                        </ul>
+                      
+                    </div>
+                    <div class="col-6 col-md-7 my-auto text-right">
+                        <ul>
+                            <li><i class="fa fa-envelope-o"></i> <a href="#">customer@website.com</a> </li>
+                            <li><i class="fa fa-phone"></i> <a href="#">555-1965-543</a> </li>
+                        </ul>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu-wrapper">
+            <nav>
+                <div class="main-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7 col-sm-7 col-lg-2">
+                                <div class="hamburger"><a href="#"><span><span></span></span></a></div>
+                                <div class="logo">
+                                    <a href="index.html"><img src="~/Public/images/logo.png" alt="ThePure Template Logo" /></a>
+                                </div>
+                                <ul class="main-nav small-screen">
+                                    <li>
+                                        <a href="#">Home</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("index","home")">Home </a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pages</a>
+                                        <ul>
+                                           
+                                            <li><a href="@Url.Action("index","profile")">View Profile</a></li>
+                                            <li><a href="@Url.Action("index","store")">View Store</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">My account</a>
+                                        <ul>
+                                         
+                                            <li><a href="@Url.Action("index","info")">My Info</a></li>
+                                            <li><a href="@Url.Action("index","favorites")">Favorites</a></li>
+                                            <li><a href="@Url.Action("index","inbox")">Inbox</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">Others</a>
+                                        <ul>
+                                           
+                                            <li><a href="@Url.Action("index","signin")">Sign-in</a></li>
+                                            <li><a href="@Url.Action("index","signup")">Sign-up</a></li>
+                                         
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("index","contact")">Contact</a></li>
+                                          
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-1 col-lg-8 d-none d-sm-block">
+                                <ul class="main-nav">
+                                    <li>
+                                        <a href="#">Home</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("index","home")">Home </a></li>
+                                          
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pages</a>
+                                        <ul>
+                                           
+                                            <li><a href="@Url.Action("index","profile")">View Profile</a></li>
+                                            <li><a href="@Url.Action("index","store")">View Store</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">My account</a>
+                                        <ul>
+                                           
+                                            <li><a href="@Url.Action("index","info")">My Info</a></li>
+                                            <li><a href="@Url.Action("index","favorites")">Favorites</a></li>
+                                            <li><a href="@Url.Action("index","inbox")">Inbox</a></li>
+                                          
+                                        </ul>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">Others</a>
+                                        <ul>
+                                          
+                                            <li><a href="@Url.Action("index","signin")">Sign-in</a></li>
+                                            <li><a href="@Url.Action("index","signup")">Sign-up</a></li>
+                                          
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("index","contact")">Contact </a></li>
+                                          
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-5 col-sm-4 col-lg-2">
+                                <div class="right-block text-right">
+                                    <a href="my-account-info.html" class="btn d-lg-none"><i class="far fa-user" aria-hidden="true"></i></a>
+                                    <div class="btn-group d-none d-lg-block">
+                                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="far fa-user" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a href="my-account-my-listing.html"><i class="fas fa-server" aria-hidden="true"></i>My Ads</a>
+                                            <a href="my-account-info.html"><i class="fas fa-cog" aria-hidden="true"></i>Account Info</a>
+                                            <a href="my-account-favorites.html"><i class="far fa-heart" aria-hidden="true"></i>Favorites</a>
+                                            <a href="my-account-inbox.html"><i class="far fa-comments" aria-hidden="true"></i>Inbox</a>
+                                            <a href="my-account-invoice.html"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>Invoices</a>
+                                            <a href="my-account-store.html"><i class="fas fa-store" aria-hidden="true"></i>Store Settings</a>
+                                            <a href="#"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>Logout</a>
+                                        </div>
+                                    </div>
+                                    <a href="post.html" class="btn btn-secondary"><i class="fa fa-plus" aria-hidden="true"></i><span>Post an Ad</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <section class="bkg-light medium">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="boxed-container">
+                            <div class="authentication">
+                                <div class="block">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="section-header text-center">
+                                                <h3>Join</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="" value="" placeholder="First name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="" value="" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="" value="" placeholder="Birthday">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="" value="" placeholder="Month">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="" value="" placeholder="Year">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="" value="" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" name="" value="" placeholder="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" name="" value="" placeholder="Retype Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="checkbox" id="customer-termsandconditions" value="1">
+                                                <label for="customer-termsandconditions" data-original-title="" title="">I agree to <a target="_blank" href="simple-page.html">the Terms and Conditions</a></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="text-center">
+                                                <div class="g-recaptcha" data-sitekey="6LfgeWoUAAAAAIQVuIfYHBF2rKaxcFBhEQ1ayR_L"></div>
+                                                <input type="hidden" id="contactform-recaptcha2">
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary full-width" value="Submit">Join</button>
+                                                <p>Already have an account? <a href="sign-in.html">Sign in.</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="section-header text-center">
+                                                <h3>or Join with</h3>
+                                            </div>
+                                            <div class="sign-in-with">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <a href="#" class="btn btn-facebook">Facebook</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <a href="#" class="btn btn-google">Google</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <a href="#" class="btn btn-linkedin">Linkedin</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <a href="#" class="btn btn-twitter">Twitter</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <form action="#" method="post" class="newsletter-banner">
+            <div class="container">
+                <div class="row justify-content-center align-self-center h-100">
+                    <div class="col-12 col-xl-10">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-8 col-lg-6 my-auto">
+                                <label>Sign up For <strong>Newsletter:</strong></label>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-6 my-auto">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="block-navigation">
+            <a href="javascript:;" class="btn btn-secondary back-to-top"><i class="fas fa-angle-up"></i></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="logo">
+                            <a href="#"><img src="~/Public/images/logo-light.png" width="" height="" alt="" /></a>
+                        </div>
+                        <p class="info">
+                            Aliquam accumsan dolor enim, et tincidunt augue cursus in felis in lorem efficitur molestie id eget erat. Vivamus nisi tellus, sodales at auctor non, blandit vel augue. Etiam quis libero feugiat, consequat vitae, venenatis nisl.
+                        </p>
+                        <ul class="social">
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-google-plus-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-pinterest-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="heading">Categories</div>
+                                <ul>
+                                    <li><a href="category-list-2.html">Auto & Moto</a></li>
+                                    <li><a href="category-list.html">Electronics & Appliances</a></li>
+                                    <li><a href="category-list-2.html">Fashion</a></li>
+                                    <li><a href="category-list.html">Home And Garden</a></li>
+                                    <li><a href="category-list-2.html">Jobs</a></li>
+                                    <li><a href="category-list.html">Pets</a></li>
+                                    <li><a href="category-list-2.html">Real Estate</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="heading">Help</div>
+                                <ul>
+                                    <li><a href="simple-page.html">Conditions</a></li>
+                                    <li><a href="simple-page.html">Contact</a></li>
+                                    <li><a href="simple-page.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="heading">Blog</div>
+                                <ul>
+                                    <li><a href="blog-article.html">About Us</a></li>
+                                    <li><a href="blog-article.html">Company</a></li>
+                                    <li><a href="blog-article.html">Business</a></li>
+                                    <li><a href="blog-article.html">Affiliate</a></li>
+                                    <li><a href="blog-article.html">Intern Program</a></li>
+                                    <li><a href="blog-article.html">Jobs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        2018 &copy; ThePure Template by <a href="https://www.codinbit.com/">CodinBit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/Public/vendor/jquery/jquery.min.js"></script>
+
+    <script src="~/Public/vendor/popper.min.js"></script>
+    <script src="~/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Public/vendor/slick/slick.js"></script>
+    <script src="~/Public/vendor/select2/dist/js/select2.min.js"></script>
+    <script src="~/Public/vendor/ekko-lightbox/ekko-lightbox.js"></script>
+    <script src="../../www.google.com/recaptcha/api.js" async defer></script>
+    <script src="~/Public/js/main.js"></script>
+</body>
+
+<!-- Mirrored from demo.codinbit.com/thepure/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Oct 2019 09:26:18 GMT -->
+</html>
+
