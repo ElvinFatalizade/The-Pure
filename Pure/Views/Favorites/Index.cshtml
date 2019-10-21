@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!-- Mirrored from demo.codinbit.com/thepure/my-account-favorites.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Oct 2019 09:26:18 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,7 +77,7 @@
                             <div class="col-7 col-sm-7 col-lg-2">
                                 <div class="hamburger"><a href="#"><span><span></span></span></a></div>
                                 <div class="logo">
-                                    <a href="index.html"><img src="/Public/images/logo.png" alt="ThePure Template Logo" /></a>
+                                    <a href="@Url.Action("index","home")"><img src="/Public/images/logo.png" alt="ThePure Template Logo" /></a>
                                 </div>
                                 <ul class="main-nav small-screen">
                                     <li>
@@ -326,97 +326,9 @@
     </div>
 
 
-    <footer class="footer">
-        <form action="#" method="post" class="newsletter-banner">
-            <div class="container">
-                <div class="row justify-content-center align-self-center h-100">
-                    <div class="col-12 col-xl-10">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-8 col-lg-6 my-auto">
-                                <label>Sign up For <strong>Newsletter:</strong></label>
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-6 my-auto">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-secondary" type="button">Sign Up</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-        <div class="block-navigation">
-            <a href="javascript:;" class="btn btn-secondary back-to-top"><i class="fas fa-angle-up"></i></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="logo">
-                            <a href="#"><img src="/Public/images/logo-light.png" width="" height="" alt="" /></a>
-                        </div>
-                        <p class="info">
-                            Aliquam accumsan dolor enim, et tincidunt augue cursus in felis in lorem efficitur molestie id eget erat. Vivamus nisi tellus, sodales at auctor non, blandit vel augue. Etiam quis libero feugiat, consequat vitae, venenatis nisl.
-                        </p>
-                        <ul class="social">
-                            <li><a href="#" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-google-plus-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-pinterest-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-8">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <div class="heading">Categories</div>
-                                <ul>
-                                    <li><a href="category-list-2.html">Auto & Moto</a></li>
-                                    <li><a href="category-list.html">Electronics & Appliances</a></li>
-                                    <li><a href="category-list-2.html">Fashion</a></li>
-                                    <li><a href="category-list.html">Home And Garden</a></li>
-                                    <li><a href="category-list-2.html">Jobs</a></li>
-                                    <li><a href="category-list.html">Pets</a></li>
-                                    <li><a href="category-list-2.html">Real Estate</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="heading">Help</div>
-                                <ul>
-                                    <li><a href="simple-page.html">Conditions</a></li>
-                                    <li><a href="simple-page.html">Contact</a></li>
-                                    <li><a href="simple-page.html">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="heading">Blog</div>
-                                <ul>
-                                    <li><a href="blog-article.html">About Us</a></li>
-                                    <li><a href="blog-article.html">Company</a></li>
-                                    <li><a href="blog-article.html">Business</a></li>
-                                    <li><a href="blog-article.html">Affiliate</a></li>
-                                    <li><a href="blog-article.html">Intern Program</a></li>
-                                    <li><a href="blog-article.html">Jobs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="block-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        2018 &copy; ThePure Template by <a href="https://www.codinbit.com/">CodinBit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+ @{
+     Html.RenderPartial("~/Views/Shared/_MyProduct.cshtml");
+ }
 
 
     <script src="~/Publicvendor/jquery/jquery.min.js"></script>
@@ -429,6 +341,6 @@
     <script src="~/Publicjs/main.js"></script>
 </body>
 
-<!-- Mirrored from demo.codinbit.com/thepure/my-account-favorites.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Oct 2019 09:26:18 GMT -->
+
 </html>
 

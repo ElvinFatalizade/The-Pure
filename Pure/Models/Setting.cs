@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pure.Models
 {
@@ -9,10 +10,20 @@ namespace Pure.Models
     {
         public int Id { get; set; }
 
-        public string Location  { get; set; }
+        [MaxLength(100)]
+        public string Logo { get; set; }
 
+        [MaxLength(50)]
         public string Email { get; set; }
 
-        public string  Number { get; set; }
+        [MaxLength(50)]
+        public string HeaderPhone { get; set; }
+
+        [MaxLength(50)]
+        public string ContactPhone { get; set; }
+
+        [MaxLength(100)]
+        public string Adress { get; set; }
+
     }
 }
