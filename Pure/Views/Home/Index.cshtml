@@ -9,163 +9,11 @@
 </div>
 <div class="overlay-nav"></div>
 
-<header class="header floating">
-    <div class="top-bar">
-        <div class="container">
-            <div class="row justify-content-center align-self-center h-100">
-                <div class="col-6 col-md-5 my-auto">
-                    <ul>
-                        <li><strong>Location: United States</strong></li>
-                    </ul>
 
-                </div>
-                <div class="col-6 col-md-7 my-auto text-right">
-                    <ul>
-                        <li><i class="fa fa-envelope-o"></i> <a href="#">customer@website.com</a> </li>
-                        <li><i class="fa fa-phone"></i> <a href="#">555-1965-543</a> </li>
-                    </ul>
-                    <div class="btn-group language">
-                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="flag flag-gbr"></span> EN
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="#"><span class="flag flag-fra"></span> FR</a>
-                            <a href="#"><span class="flag flag-ita"></span> IT</a>
-                            <a href="#"><span class="flag flag-esp"></span> ES</a>
-                            <a href="#"><span class="flag flag-deu"></span> DE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main-menu-wrapper">
-        <nav>
-            <div class="main-menu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-7 col-sm-7 col-lg-2">
-                            <div class="hamburger"><a href="#"><span><span></span></span></a></div>
-                            <div class="logo">
-                                <a href="@Url.Action("index", "home")"><img src="~/Public/images/logo.png" alt="ThePure Template Logo" /></a>
-                            </div>
-                            <ul class="main-nav small-screen">
-                                <li class="active">
-                                    <a href="#">Home</a>
-                                    <ul>
-                                        <li><a href="@Url.Action("index", "home")">Home default</a></li>
+    @{ 
+        Html.RenderPartial("~/Views/Shared/_Header.cshtml");
+    }
 
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Pages</a>
-                                    <ul>
-                                       
-                                        <li><a href="@Url.Action("index", "profile")">View Profile</a></li>
-                                        <li><a href="@Url.Action("index", "store")">View Store</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">My account</a>
-                                    <ul>
-                                       
-                                        <li><a href="@Url.Action("index", "info")">My Info</a></li>
-                                        <li><a href="@Url.Action("index","favorites")">Favorites</a></li>
-                                        <li><a href="@Url.Action("index","inbox")">Inbox</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Others</a>
-                                    <ul>
-                                       
-                                        <li><a href="@Url.Action("index","signin")">Sign-in</a></li>
-                                        <li><a href="@Url.Action("index","signup")">Sign-up</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                    <ul>
-                                        <li><a href="@Url.Action("index","contact")">Contact</a></li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-1 col-lg-8 d-none d-sm-block">
-                            <ul class="main-nav">
-                                <li class="active">
-                                    <a href="#">Home</a>
-                                    <ul>
-                                        <li><a href="@Url.Action("index", "home")">Home Default</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Pages</a>
-                                    <ul>
-                                        
-                                        <li><a href="@Url.Action("index", "profile")">View Profile</a></li>
-                                        <li><a href="@Url.Action("index", "store")">View Store</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">My account</a>
-                                    <ul>
-                                        
-                                        <li><a href="@Url.Action("index","info")">My Info</a></li>
-                                        <li><a href="@Url.Action("index","favorites")">Favorites</a></li>
-                                        <li><a href="@Url.Action("index","inbox")">Inbox</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Others</a>
-                                    <ul>
-                                       
-                                        <li><a href="@Url.Action("index","signin")">Sign-in</a></li>
-                                        <li><a href="@Url.Action("index","signup")">Sign-up</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                    <ul>
-                                        <li><a href="@Url.Action("index","contact")">Contact</a></li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-5 col-sm-4 col-lg-2">
-                            <div class="right-block text-right">
-                                <a href="my-account-info.html" class="btn d-lg-none"><i class="far fa-user" aria-hidden="true"></i></a>
-                                <div class="btn-group d-none d-lg-block">
-                                    <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="far fa-user" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a href="my-account-my-listing.html"><i class="fas fa-server" aria-hidden="true"></i>My Ads</a>
-                                        <a href="my-account-info.html"><i class="fas fa-cog" aria-hidden="true"></i>Account Info</a>
-                                        <a href="my-account-favorites.html"><i class="far fa-heart" aria-hidden="true"></i>Favorites</a>
-                                        <a href="my-account-inbox.html"><i class="far fa-comments" aria-hidden="true"></i>Inbox</a>
-                                        <a href="my-account-invoice.html"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>Invoices</a>
-                                        <a href="my-account-store.html"><i class="fas fa-store" aria-hidden="true"></i>Store Settings</a>
-                                        <a href="#"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>Logout</a>
-                                    </div>
-                                </div>
-                                <a href="post.html" class="btn btn-secondary"><i class="fa fa-plus" aria-hidden="true"></i><span>Post an Ad</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
 
 
 <div class="content">
@@ -179,7 +27,7 @@
                                 <h3 class="heading">Created sixth multiply</h3>
                                 <p class="caption-header">Won't good green every years above saying don't kind land the female. Of abundantly He. <br>Hath shall i their us moveth sixth in.</p>
                             </div>
-                            <a href="post.html" class="btn btn-primary">Post your own ad</a>
+                            <a href="@Url.Action("index","post")" class="btn btn-primary">Post your own ad</a>
                         </div>
                     </div>
                 </div>
@@ -379,7 +227,7 @@
                                     <div class="excerpt">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
                                     </div>
-                                    <a href="view-store.html" class="btn btn-primary">View store</a>
+                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
                                 </div>
                             </div>
                         </div>
@@ -399,7 +247,7 @@
                                     <div class="excerpt">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
                                     </div>
-                                    <a href="view-store.html" class="btn btn-primary">View store</a>
+                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +267,7 @@
                                     <div class="excerpt">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
                                     </div>
-                                    <a href="view-store.html" class="btn btn-primary">View store</a>
+                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
                                 </div>
                             </div>
                         </div>
@@ -439,7 +287,7 @@
                                     <div class="excerpt">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
                                     </div>
-                                    <a href="view-store-v2.html" class="btn btn-primary">View store</a>
+                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
                                 </div>
                             </div>
                         </div>
@@ -472,7 +320,7 @@
                         <div class="info-wrapper">
                             <div class="info">
                                 <div class="category">Electronics</div>
-                                <a href="view-listing.html" class="name">Apple care package</a>
+                                <a href="@Url.Action("index","viewlisting")" class="name">Apple care package</a>
                                 <span class="price">$419.99</span>
                                 <span class="excerpt">Etiam leo donec facilisi volutpat leo, inceptos nisi.</span>
                                 <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
@@ -484,7 +332,7 @@
                 <div class="col-12 col-md-6 col-lg-4 item">
                     <div class="item-wrapper">
                         <div class="image-wrapper">
-                            <a href="view-listing.html" class="image">
+                            <a href="@Url.Action("index","viewlisting")" class="image">
                                 <img class="" src="~/Public/images/products/1000X675_bag.jpg" data-src="#" alt="">
                             </a>
                             <div class="quick-actions">
@@ -495,7 +343,7 @@
                         <div class="info-wrapper">
                             <div class="info">
                                 <div class="category">Fashion</div>
-                                <a href="view-listing.html" class="name">Zara bag</a>
+                                <a href="@Url.Action("index","viewlisting")" class="name">Zara bag</a>
                                 <span class="price">$400</span>
                                 <span class="excerpt">Nibh justo duis dapibus euismod auctor venenatis in luctus non. Sociosqu eleifend tincidunt euismod euismod nunc luctus.</span>
                                 <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
@@ -507,7 +355,7 @@
                 <div class="col-12 col-md-6 col-lg-4 item">
                     <div class="item-wrapper">
                         <div class="image-wrapper">
-                            <a href="view-listing.html" class="image">
+                            <a href="@Url.Action("index","viewlisting")" class="image">
                                 <img class="" src="~/Public/images/products/1000X675_bmw.jpg" data-src="#" alt="">
                             </a>
                             <div class="quick-actions">
@@ -518,7 +366,7 @@
                         <div class="info-wrapper">
                             <div class="info">
                                 <div class="category">Auto, Moto</div>
-                                <a href="view-listing.html" class="name">BMW series 5</a>
+                                <a href="@Url.Action("index","viewlisting")" class="name">BMW series 5</a>
                                 <span class="price">$54,000</span>
                                 <span class="excerpt">Ad per sem etiam rhoncus integer aptent, cubilia viverra ante, elit, praesent sociis.</span>
                                 <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
@@ -530,7 +378,7 @@
                 <div class="col-12 col-md-6 col-lg-4 item">
                     <div class="item-wrapper">
                         <div class="image-wrapper">
-                            <a href="view-listing.html" class="image">
+                            <a href="@Url.Action("index","viewlisting")" class="image">
                                 <img class="" src="~/Public/images/products/1000X675_boots.jpg" data-src="#" alt="">
                             </a>
                             <div class="quick-actions">
@@ -541,7 +389,7 @@
                         <div class="info-wrapper">
                             <div class="info">
                                 <div class="category">Fashion</div>
-                                <a href="view-listing.html" class="name">Timberlake Boots</a>
+                                <a href="@Url.Action("index","viewlisting")" class="name">Timberlake Boots</a>
                                 <span class="price">$212.00</span>
                                 <span class="excerpt">Fringilla. Aliquet dolor. Tellus nostra nunc nisl.</span>
                                 <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
@@ -553,7 +401,7 @@
                 <div class="col-12 col-md-6 col-lg-4 item">
                     <div class="item-wrapper">
                         <div class="image-wrapper">
-                            <a href="view-listing.html" class="image">
+                            <a href="@Url.Action("index","viewlisting")" class="image">
                                 <img class="" src="~/Public/images/products/1000X675_converse.jpg" data-src="#" alt="">
                             </a>
                             <div class="quick-actions">
@@ -564,7 +412,7 @@
                         <div class="info-wrapper">
                             <div class="info">
                                 <div class="category">Fashion</div>
-                                <a href="view-listing.html" class="name">Converse shoes</a>
+                                <a href="@Url.Action("index","viewlisting")" class="name">Converse shoes</a>
                                 <span class="price">$135.00</span>
                                 <span class="excerpt">Velit bibendum, porttitor. Quis convallis, varius placerat viverra erat nascetur. </span>
                                 <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Washington, Seattle</span>
@@ -576,7 +424,7 @@
                 <div class="col-12 col-md-6 col-lg-4 item">
                     <div class="item-wrapper">
                         <div class="image-wrapper">
-                            <a href="view-listing.html" class="image">
+                            <a href="@Url.Action("index","viewlisting")" class="image">
                                 <img class="" src="~/Public/images/products/1000X675_vespa-2.jpg" data-src="#" alt="">
                             </a>
                             <div class="quick-actions">
@@ -587,7 +435,7 @@
                         <div class="info-wrapper">
                             <div class="info">
                                 <div class="category">Auto, Moto</div>
-                                <a href="view-listing.html" class="name">Vespa</a>
+                                <a href="@Url.Action("index","viewlisting")" class="name">Vespa</a>
                                 <span class="price">$1200</span>
                                 <span class="excerpt">Suspendisse Eget fusce aenean risus platea dolor feugiat suspendisse augue.</span>
                                 <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Nevada, Las Vegas</span>
@@ -600,7 +448,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="view-more text-center">
-                        <a href="category-list-2.html" class="btn btn-primary">Load More</a>
+                        <a href="@Url.Action("index","loadmore")" class="btn btn-primary">Load More</a>
                     </div>
                 </div>
             </div>
@@ -714,41 +562,41 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="blog-article.html" class="image">
+                    <a href="@Url.Action("index","blogarticle")" class="image">
                         <img class="" src="~/Public/images/blog/1000X675_article-1.jpg" data-src="#" alt="">
                     </a>
                     <div class="info">
-                        <a href="blog-article.html" class="name">Best selling practices</a>
+                        <a href="@Url.Action("index","blogarticle")" class="name">Best selling practices</a>
                         <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.</span>
                         <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 1 hour ago</span>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="blog-article.html" class="image">
+                    <a href="@Url.Action("index","blogarticle")" class="image">
                         <img class="" src="~/Public/images/blog/1000X675_article-2.jpg" data-src="#" alt="">
                     </a>
                     <div class="info">
-                        <a href="blog-article.html" class="name">Increase your sales income</a>
+                        <a href="@Url.Action("index","blogarticle")" class="name">Increase your sales income</a>
                         <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 11.07.2018</span>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="blog-article.html" class="image">
+                    <a href="@Url.Action("index","blogarticle")" class="image">
                         <img class="" src="~/Public/images/blog/1000X675_article-3.jpg" data-src="#" alt="">
                     </a>
                     <div class="info">
-                        <a href="blog-article.html" class="name">Advertise your own prodcut</a>
+                        <a href="@Url.Action("index","blogarticle")" class="name">Advertise your own prodcut</a>
                         <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 2 hours ago</span>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="blog-article.html" class="image">
+                    <a href="@Url.Action("index","blogarticle")" class="image">
                         <img class="" src="~/Public/images/blog/1000X675_article-4.jpg" data-src="#" alt="">
                     </a>
                     <div class="info">
-                        <a href="blog-article.html" class="name">101 SEO rules</a>
+                        <a href="@Url.Action("index","blogarticle")" class="name">101 SEO rules</a>
                         <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Yesterday</span>
                     </div>
@@ -757,7 +605,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="view-more text-center">
-                        <a href="blog-grid.html" class="btn btn-primary">View All</a>
+                        <a href="@Url.Action("index","recentviewall")" class="btn btn-primary">View All</a>
                     </div>
                 </div>
             </div>

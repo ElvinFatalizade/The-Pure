@@ -1,0 +1,316 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="Premium HTML5 Template" />
+    <meta name="description" content="ThePure - Responsive Bootstrap Classified Ads HTML Template" />
+    <meta name="author" content="CodinBit.com" />
+    <title>ThePure - Responsive Bootstrap Classified Ads HTML Template</title>
+
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/font-awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/flags2/flag-css.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Public/vendor/ekko-lightbox/ekko-lightbox.css" />
+
+    <link rel="stylesheet" type="text/css" href="~/Public/css/style.css">
+</head>
+<body>
+    <div class="page-loader loading">
+        <div class="loader">
+            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="overlay-nav"></div>
+
+   
+        
+       @{ 
+           Html.RenderPartial("~/Views/Shared/_Header.cshtml");
+       }
+    
+
+    <div class="content">
+        <section class="bkg-light medium">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="boxed-container">
+                            <div class="blog">
+                                <div class="block">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="section-header text-center no-padding">
+                                                <h3>Blog grid</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-1.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Best selling practices</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 1 hour ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-2.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Increase your sales income</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 11.07.2018</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-3.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Advertise your own prodcut</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 2 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-4.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">101 SEO rules</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Yesterday</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-5.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Office rules</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Yesterday</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-6.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Social media targeting</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Today</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-7.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Coding standards</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 11.09.2018</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-8.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Likes on Facebook</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 12.08.2018</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-9.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Social Networks</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Today</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-10.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Instagram success</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 11.07.2017</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-11.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Healthy life</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Yesterday</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 item">
+                                            <a href="blog-article.html" class="image">
+                                                <img class="lazyloaded" src="~/Public/images/blog/1000X675_article-12.jpg" data-src="#" alt="">
+                                            </a>
+                                            <div class="info">
+                                                <a href="blog-article.html" class="name">Creative Design</a>
+                                                <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 11.11.2018</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="pagination text-center">
+                                                <li class="page-item prev"><a class="page-link" href="#" tabindex="-1"><i class="fa fa-arrow-left"></i></a></li>
+                                                <li class="page-item first"><a class="page-link" href="#">First</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">27</a></li>
+                                                <li class="page-item first"><a class="page-link" href="#">Last</a></li>
+                                                <li class="page-item next"><a class="page-link" href="#"><i class="fa fa-arrow-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <form action="#" method="post" class="newsletter-banner">
+            <div class="container">
+                <div class="row justify-content-center align-self-center h-100">
+                    <div class="col-12 col-xl-10">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-8 col-lg-6 my-auto">
+                                <label>Sign up For <strong>Newsletter:</strong></label>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-6 my-auto">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="block-navigation">
+            <a href="javascript:;" class="btn btn-secondary back-to-top"><i class="fas fa-angle-up"></i></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="logo">
+                            <a href="#"><img src="~/Public/images/logo-light.png" width="" height="" alt="" /></a>
+                        </div>
+                        <p class="info">
+                            Aliquam accumsan dolor enim, et tincidunt augue cursus in felis in lorem efficitur molestie id eget erat. Vivamus nisi tellus, sodales at auctor non, blandit vel augue. Etiam quis libero feugiat, consequat vitae, venenatis nisl.
+                        </p>
+                        <ul class="social">
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-google-plus-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-pinterest-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="heading">Categories</div>
+                                <ul>
+                                    <li><a href="category-list-2.html">Auto & Moto</a></li>
+                                    <li><a href="category-list.html">Electronics & Appliances</a></li>
+                                    <li><a href="category-list-2.html">Fashion</a></li>
+                                    <li><a href="category-list.html">Home And Garden</a></li>
+                                    <li><a href="category-list-2.html">Jobs</a></li>
+                                    <li><a href="category-list.html">Pets</a></li>
+                                    <li><a href="category-list-2.html">Real Estate</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="heading">Help</div>
+                                <ul>
+                                    <li><a href="simple-page.html">Conditions</a></li>
+                                    <li><a href="simple-page.html">Contact</a></li>
+                                    <li><a href="simple-page.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="heading">Blog</div>
+                                <ul>
+                                    <li><a href="blog-article.html">About Us</a></li>
+                                    <li><a href="blog-article.html">Company</a></li>
+                                    <li><a href="blog-article.html">Business</a></li>
+                                    <li><a href="blog-article.html">Affiliate</a></li>
+                                    <li><a href="blog-article.html">Intern Program</a></li>
+                                    <li><a href="blog-article.html">Jobs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        2018 &copy; ThePure Template by <a href="https://www.codinbit.com/">CodinBit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/Public/vendor/jquery/jquery.min.js"></script>
+
+    <script src="~/Public/vendor/popper.min.js"></script>
+    <script src="~/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Public/vendor/slick/slick.js"></script>
+    <script src="~/Public/vendor/select2/dist/js/select2.min.js"></script>
+    <script src="~/Public/vendor/ekko-lightbox/ekko-lightbox.js"></script>
+    <script src="../../www.google.com/recaptcha/api.js" async defer></script>
+    <script src="~/Public/js/main.js"></script>
+</body>
+
+
+</html>
+
