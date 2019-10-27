@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class ViewStoreController : Controller
+    public class ViewStoreController : BaseController
     {
         // GET: ViewStore
         public ActionResult Index()

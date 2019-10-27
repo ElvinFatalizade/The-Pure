@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class FavoritesController : Controller
+    public class FavoritesController : BaseController
     {
         // GET: Favorites
         public ActionResult Index()

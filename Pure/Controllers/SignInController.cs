@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class SignInController : Controller
+    public class SignInController : BaseController
     {
         // GET: SignIn
         public ActionResult Index()

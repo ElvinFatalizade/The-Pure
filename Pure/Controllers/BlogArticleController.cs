@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class BlogArticleController : Controller
+    public class BlogArticleController : BaseController
     {
         // GET: BlogArticle
         public ActionResult Index()

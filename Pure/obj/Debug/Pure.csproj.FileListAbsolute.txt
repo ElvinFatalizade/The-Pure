@@ -83,3 +83,4 @@ C:\Users\user\source\repos\Pure\Pure\bin\roslyn\System.Threading.Tasks.Extension
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.Init.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.csproj.GenerateResource.cache
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.Modelsupdate.resources

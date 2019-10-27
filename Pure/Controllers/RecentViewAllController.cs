@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class RecentViewAllController : Controller
+    public class RecentViewAllController : BaseController
     {
         // GET: RecentViewAll
         public ActionResult Index()

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class ViewListingController : Controller
+    public class ViewListingController : BaseController
     {
         // GET: ViewListing
         public ActionResult Index()

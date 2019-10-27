@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class LoadMoreController : Controller
+    public class LoadMoreController : BaseController
     {
         // GET: LoadMore
         public ActionResult Index()

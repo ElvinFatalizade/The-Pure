@@ -1,4 +1,6 @@
-﻿@{
+﻿@model  Homepage
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -211,86 +213,35 @@
                         <h3>Popular Stores</h3>
                     </div>
                     <div class="featured-stores slider-multiple dir-nav">
-                        <div class="slider-item">
-                            <div class="item">
-                                <div class="img-thumbnail">
-                                    <img src="~/Public/images/stores/500X500_abc.jpg" width="" height="" alt="" />
-                                </div>
-                                <div class="info">
-                                    <h6><i class="fa fa-store"></i>ABC Fashion Store</h6>
-                                    <div class="actions">
-                                        <div class="rating rated">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                        @foreach (var item in Model.Populars)
+                        {
+                            <div class="slider-item">
+                                <div class="item">
+                                    <div class="img-thumbnail">
+                                        <img src="~/Uploads/@item.Photo" width="" height="" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h6><i class="fa fa-store"></i>@item.Title</h6>
+                                        <div class="actions">
+                                            <div class="rating rated">
+                                                <i class="@item.Icon"></i>
+                                                <i class="@item.Icon"></i>
+                                                <i class="@item.Icon"></i>
+                                                <i class="@item.Icon"></i>
+                                                <i class="@item.Icon"></i>
+                                            </div>
+                                         
                                         </div>
-                                        <span class="reviews">(57 reviews)</span>
+                                        <div class="excerpt">
+                                           @item.Text
+                                        </div>
+                                        <a href="@Url.Action("index","viewstore")" class="btn btn-primary">@item.LinkName</a>
                                     </div>
-                                    <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
-                                    </div>
-                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="item">
-                                <div class="img-thumbnail">
-                                    <img src="~/Public/images/stores/500X500_apple.jpg" width="" height="" alt="" />
-                                </div>
-                                <div class="info">
-                                    <h6><i class="fa fa-store"></i>GoodFood Magazine</h6>
-                                    <div class="actions">
-                                        <div class="rating rated">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                        <span class="reviews">(158 reviews)</span>
-                                    </div>
-                                    <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
-                                    </div>
-                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="item">
-                                <div class="img-thumbnail">
-                                    <img src="~/Public/images/stores/500X500_business.jpg" width="" height="" alt="" />
-                                </div>
-                                <div class="info">
-                                    <h6><i class="fa fa-store"></i>Electronics Shop</h6>
-                                    <div class="actions">
-                                        <div class="rating">
-                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                                        </div>
-                                        <span class="reviews">(883 reviews)</span>
-                                    </div>
-                                    <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
-                                    </div>
-                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="item">
-                                <div class="img-thumbnail">
-                                    <img src="~/Public/images/stores/500X500_jaguar.jpg" width="" height="" alt="" />
-                                </div>
-                                <div class="info">
-                                    <h6><i class="fa fa-store"></i>Jaguar Auto</h6>
-                                    <div class="actions">
-                                        <div class="rating rated">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                        <span class="reviews">(158 reviews)</span>
-                                    </div>
-                                    <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
-                                    </div>
-                                    <a href="@Url.Action("index","viewstore")" class="btn btn-primary">View store</a>
-                                </div>
-                            </div>
-                        </div>
+                        }
+
+                      
                     </div>
                 </div>
             </div>
@@ -306,145 +257,41 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 item">
-                    <div class="item-wrapper">
-                        <div class="image-wrapper">
-                            <a href="view-listing.html" class="image">
-                                <img class="" src="~/Public/images/products/1000X675_accessories.jpg" data-src="#" alt="">
-                            </a>
-                            <div class="quick-actions">
-                                <a href="#quick-view" data-toggle="modal" class="btn btn-primary btn-circle"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                <a href="#" class="btn btn-primary btn-circle add-to-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                @foreach (var item in Model.Ads)
+                {
+                    <div class="col-12 col-md-6 col-lg-4 item">
+
+                        <div class="item-wrapper">
+
+                            <div class="image-wrapper">
+                                <a href="view-listing.html" class="image">
+                                    <img class="" src="~/Uploads/@item.Photo" data-src="#" alt="">
+                                </a>
+                                <div class="quick-actions">
+                                    <a href="#quick-view" data-toggle="modal" class="btn btn-primary btn-circle"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn btn-primary btn-circle add-to-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-wrapper">
-                            <div class="info">
-                                <div class="category">Electronics</div>
-                                <a href="@Url.Action("index","viewlisting")" class="name">Apple care package</a>
-                                <span class="price">$419.99</span>
-                                <span class="excerpt">Etiam leo donec facilisi volutpat leo, inceptos nisi.</span>
-                                <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
-                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 2 hours ago</span>
+
+
+                            <div class="info-wrapper">
+                                <div class="info">
+                                    <div class="category">@item.Title</div>
+                                    <a href="@Url.Action("index", "viewlisting")" class="name">@item.LinkName</a>
+                                    <span class="price">$@item.Price</span>
+                                    <span class="excerpt">@item.Text</span>
+                                    <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> @item.LocationName</span>
+                                    <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> @item.Date</span>
+                                </div>
                             </div>
+
                         </div>
+                        
+
                     </div>
+                }
+                   
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 item">
-                    <div class="item-wrapper">
-                        <div class="image-wrapper">
-                            <a href="@Url.Action("index","viewlisting")" class="image">
-                                <img class="" src="~/Public/images/products/1000X675_bag.jpg" data-src="#" alt="">
-                            </a>
-                            <div class="quick-actions">
-                                <a href="#quick-view" data-toggle="modal" class="btn btn-primary btn-circle"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                <a href="#" class="btn btn-primary btn-circle add-to-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="info-wrapper">
-                            <div class="info">
-                                <div class="category">Fashion</div>
-                                <a href="@Url.Action("index","viewlisting")" class="name">Zara bag</a>
-                                <span class="price">$400</span>
-                                <span class="excerpt">Nibh justo duis dapibus euismod auctor venenatis in luctus non. Sociosqu eleifend tincidunt euismod euismod nunc luctus.</span>
-                                <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
-                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Yesterday</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 item">
-                    <div class="item-wrapper">
-                        <div class="image-wrapper">
-                            <a href="@Url.Action("index","viewlisting")" class="image">
-                                <img class="" src="~/Public/images/products/1000X675_bmw.jpg" data-src="#" alt="">
-                            </a>
-                            <div class="quick-actions">
-                                <a href="#quick-view" data-toggle="modal" class="btn btn-primary btn-circle"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                <a href="#" class="btn btn-primary btn-circle add-to-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="info-wrapper">
-                            <div class="info">
-                                <div class="category">Auto, Moto</div>
-                                <a href="@Url.Action("index","viewlisting")" class="name">BMW series 5</a>
-                                <span class="price">$54,000</span>
-                                <span class="excerpt">Ad per sem etiam rhoncus integer aptent, cubilia viverra ante, elit, praesent sociis.</span>
-                                <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
-                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Yesterday</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 item">
-                    <div class="item-wrapper">
-                        <div class="image-wrapper">
-                            <a href="@Url.Action("index","viewlisting")" class="image">
-                                <img class="" src="~/Public/images/products/1000X675_boots.jpg" data-src="#" alt="">
-                            </a>
-                            <div class="quick-actions">
-                                <a href="#quick-view" data-toggle="modal" class="btn btn-primary btn-circle"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                <a href="#" class="btn btn-primary btn-circle add-to-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="info-wrapper">
-                            <div class="info">
-                                <div class="category">Fashion</div>
-                                <a href="@Url.Action("index","viewlisting")" class="name">Timberlake Boots</a>
-                                <span class="price">$212.00</span>
-                                <span class="excerpt">Fringilla. Aliquet dolor. Tellus nostra nunc nisl.</span>
-                                <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> California, United States</span>
-                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 5 hours ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 item">
-                    <div class="item-wrapper">
-                        <div class="image-wrapper">
-                            <a href="@Url.Action("index","viewlisting")" class="image">
-                                <img class="" src="~/Public/images/products/1000X675_converse.jpg" data-src="#" alt="">
-                            </a>
-                            <div class="quick-actions">
-                                <a href="#quick-view" data-toggle="modal" class="btn btn-primary btn-circle"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                <a href="#" class="btn btn-primary btn-circle add-to-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="info-wrapper">
-                            <div class="info">
-                                <div class="category">Fashion</div>
-                                <a href="@Url.Action("index","viewlisting")" class="name">Converse shoes</a>
-                                <span class="price">$135.00</span>
-                                <span class="excerpt">Velit bibendum, porttitor. Quis convallis, varius placerat viverra erat nascetur. </span>
-                                <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Washington, Seattle</span>
-                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 2 days ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 item">
-                    <div class="item-wrapper">
-                        <div class="image-wrapper">
-                            <a href="@Url.Action("index","viewlisting")" class="image">
-                                <img class="" src="~/Public/images/products/1000X675_vespa-2.jpg" data-src="#" alt="">
-                            </a>
-                            <div class="quick-actions">
-                                <a href="#quick-view" data-toggle="modal" class="btn btn-primary btn-circle"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                <a href="#" class="btn btn-primary btn-circle add-to-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="info-wrapper">
-                            <div class="info">
-                                <div class="category">Auto, Moto</div>
-                                <a href="@Url.Action("index","viewlisting")" class="name">Vespa</a>
-                                <span class="price">$1200</span>
-                                <span class="excerpt">Suspendisse Eget fusce aenean risus platea dolor feugiat suspendisse augue.</span>
-                                <span class="location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Nevada, Las Vegas</span>
-                                <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 11.06.2018</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="view-more text-center">
@@ -458,98 +305,44 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-header text-center">
-                        <h3>Clients Reviews</h3>
-                    </div>
-                    <div class="featured-clients slider-multiple dir-nav">
+                <div class="section-header text-center">
+                    <h3>Clients Reviews</h3>
+                </div>
+               
+
+                <div class="featured-clients slider-multiple dir-nav">
+                    @foreach (var item in Model.Clients)
+                    {
                         <div class="slider-item">
                             <div class="item">
                                 <div class="img-thumbnail">
-                                    <img src="~/Public/images/reviews/500X500_review-1.jpg" width="" height="" alt="" />
+                                    <img src="~/Uploads/@item.Photo" width="" height="" alt="" />
                                 </div>
                                 <div class="info">
                                     <div class="author">
                                         <div class="name">
-                                            <strong>John Silver</strong>
+                                            <strong>@item.Name</strong>
                                             Developer
                                         </div>
                                         <div class="rating rated">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                                            <i dic class="@item.Icon"></i>
                                         </div>
                                     </div>
                                     <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
+                                        @item.Text
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-item">
-                            <div class="item">
-                                <div class="img-thumbnail">
-                                    <img src="~/Public/images/reviews/500X500_review-2.jpg" width="" height="" alt="" />
-                                </div>
-                                <div class="info">
-                                    <div class="author">
-                                        <div class="name">
-                                            <strong>Harry Joe</strong>
-                                            CEO
-                                        </div>
-                                        <div class="rating rated">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
-                                        </div>
-                                    </div>
-                                    <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="item">
-                                <div class="img-thumbnail">
-                                    <img src="~/Public/images/reviews/500X500_review-3.jpg" width="" height="" alt="" />
-                                </div>
-                                <div class="info">
-                                    <div class="author">
-                                        <div class="name">
-                                            <strong>Emma Thompson</strong>
-                                            UI/UX Designer
-                                        </div>
-                                        <div class="rating rated">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
-                                        </div>
-                                    </div>
-                                    <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="item">
-                                <div class="img-thumbnail">
-                                    <img src="~/Public/images/reviews/500X500_review-4.jpg" width="" height="" alt="" />
-                                </div>
-                                <div class="info">
-                                    <div class="author">
-                                        <div class="name">
-                                            <strong>Anna Chloe</strong>
-                                            Manager
-                                        </div>
-                                        <div class="rating rated">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
-                                        </div>
-                                    </div>
-                                    <div class="excerpt">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    }
                     </div>
+                
                 </div>
+                
+
             </div>
         </div>
+
     </section>
     <section class="featured-articles grid-4">
         <div class="container">
@@ -561,46 +354,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="@Url.Action("index","blogarticle")" class="image">
-                        <img class="" src="~/Public/images/blog/1000X675_article-1.jpg" data-src="#" alt="">
-                    </a>
-                    <div class="info">
-                        <a href="@Url.Action("index","blogarticle")" class="name">Best selling practices</a>
-                        <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec facilisis ante, sit amet molestie dolor.</span>
-                        <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 1 hour ago</span>
+                @foreach (var item in Model.Recents)
+                {
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <a href="@Url.Action("index","blogarticle")" class="image">
+                            <img class="" src="~/Uploads/@item.Photo" data-src="#" alt="">
+                        </a>
+                        <div class="info">
+                            <a href="@Url.Action("index","blogarticle")" class="name">@item.Title</a>
+                            <span class="excerpt">@item.Text</span>
+                            <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> @item.Date</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="@Url.Action("index","blogarticle")" class="image">
-                        <img class="" src="~/Public/images/blog/1000X675_article-2.jpg" data-src="#" alt="">
-                    </a>
-                    <div class="info">
-                        <a href="@Url.Action("index","blogarticle")" class="name">Increase your sales income</a>
-                        <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted on 11.07.2018</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="@Url.Action("index","blogarticle")" class="image">
-                        <img class="" src="~/Public/images/blog/1000X675_article-3.jpg" data-src="#" alt="">
-                    </a>
-                    <div class="info">
-                        <a href="@Url.Action("index","blogarticle")" class="name">Advertise your own prodcut</a>
-                        <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted 2 hours ago</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 item">
-                    <a href="@Url.Action("index","blogarticle")" class="image">
-                        <img class="" src="~/Public/images/blog/1000X675_article-4.jpg" data-src="#" alt="">
-                    </a>
-                    <div class="info">
-                        <a href="@Url.Action("index","blogarticle")" class="name">101 SEO rules</a>
-                        <span class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        <span class="posted"><i class="far fa-clock" aria-hidden="true"></i> Posted Yesterday</span>
-                    </div>
-                </div>
+                }
+
+               
             </div>
             <div class="row">
                 <div class="col-12">

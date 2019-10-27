@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pure.Controllers
 {
-    public class InboxController : Controller
+    public class InboxController : BaseController
     {
         // GET: Inbox
         public ActionResult Index()
