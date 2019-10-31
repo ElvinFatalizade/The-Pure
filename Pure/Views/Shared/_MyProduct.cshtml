@@ -1,7 +1,9 @@
-﻿@model Homepage
+﻿@model  Homepage
 @{
     List<SocialLink> socialLinks = ViewBag.SocialLink as List<SocialLink>;
     Setting settings = ViewBag.Setting as Setting;
+    CodinBit codinBit = ViewBag.CodinBit as CodinBit;
+    
 }
 
 
@@ -24,7 +26,7 @@
                             <div class="promoted">
                                 <span>Promoted</span>
                             </div>
-                            <a href="view-listing.html" class="image">
+                            <a href="@Url.Action("index","viewlisting")" class="image">
                                 <img class="" src="~/Uploads/@item.Photo" data-src="#" alt="">
                             </a>
                             <div class="quick-actions">
@@ -78,55 +80,20 @@
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="logo">
-                        <a href="#"><img src="~/Public/images/logo-light.png" width="" height="" alt="" /></a>
+                        <a href="#"><img src="~/Uploads/@codinBit.Logo" width="" height="" alt="" /></a>
                     </div>
                     <p class="info">
-                        Aliquam accumsan dolor enim, et tincidunt augue cursus in felis in lorem efficitur molestie id eget erat. Vivamus nisi tellus, sodales at auctor non, blandit vel augue. Etiam quis libero feugiat, consequat vitae, venenatis nisl.
-                    </p>
-                    <ul class="social">
-                        @foreach (var sl in socialLinks)
-                        {
-                            <li><a href="@sl.Url" target="_blank"><i class="fab fa-@sl.Icon" aria-hidden="true"></i></a></li>
-                        }
+                        @codinBit.Text
+                        <ul class="social">
+                            @foreach (var sl in socialLinks)
+                            {
+                                <li><a href="@sl.Url" target="_blank"><i class="fab fa-@sl.Icon" aria-hidden="true"></i></a></li>
+                            }
 
 
-                    </ul>
+                        </ul>
                 </div>
-                <div class="col-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="heading">Categories</div>
-                            <ul>
-                                <li><a href="category-list-2.html">Auto & Moto</a></li>
-                                <li><a href="category-list.html">Electronics & Appliances</a></li>
-                                <li><a href="category-list-2.html">Fashion</a></li>
-                                <li><a href="category-list.html">Home And Garden</a></li>
-                                <li><a href="category-list-2.html">Jobs</a></li>
-                                <li><a href="category-list.html">Pets</a></li>
-                                <li><a href="category-list-2.html">Real Estate</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="heading">Help</div>
-                            <ul>
-                                <li><a href="simple-page.html">Conditions</a></li>
-                                <li><a href="simple-page.html">Contact</a></li>
-                                <li><a href="simple-page.html">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="heading">Blog</div>
-                            <ul>
-                                <li><a href="blog-article.html">About Us</a></li>
-                                <li><a href="blog-article.html">Company</a></li>
-                                <li><a href="blog-article.html">Business</a></li>
-                                <li><a href="blog-article.html">Affiliate</a></li>
-                                <li><a href="blog-article.html">Intern Program</a></li>
-                                <li><a href="blog-article.html">Jobs</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                         
             </div>
         </div>
     </div>
@@ -134,7 +101,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    2018 &copy; ThePure Template by <a href="https://www.codinbit.com/">CodinBit</a>
+                    <a href="https://www.codinbit.com/">  @codinBit.EndText</a>
                 </div>
             </div>
         </div>

@@ -29,5 +29,13 @@ namespace Pure.Data
         public DbSet <Setting> Settings { get; set; }
 
         public DbSet <SocialLink> SocialLinks { get; set; }
+
+        public DbSet <ChooseCategory> ChooseCategories { get; set; }
+
+        public DbSet <Category> Categories { get; set; }
+
+        public DbSet <Favirites> Favirites { get; set; }
+
+
     }
 }

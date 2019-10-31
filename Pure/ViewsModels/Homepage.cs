@@ -19,5 +19,11 @@ namespace Pure.ViewsModels
         public List <Recent> Recents { get; set; }
 
         public List <Promoted> Promoteds { get; set; }
+
+        public List <ChooseCategory> ChooseCategories { get; set; }
+
+        public List <Category> Categories { get; set; }
+
+        public List <Favirites> Favirites { get; set; }
     }
 }

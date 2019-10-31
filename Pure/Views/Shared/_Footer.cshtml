@@ -1,0 +1,61 @@
+﻿@model Homepage
+@{ 
+    Setting settings = ViewBag.Setting as Setting;
+    CodinBit codinBit = ViewBag.CodinBit as CodinBit;
+    List  <SocialLink> socialLinks = ViewBag.SocialLink as List<SocialLink>;
+}
+<footer class="footer">
+    <form action="#" method="post" class="newsletter-banner">
+        <div class="container">
+            <div class="row justify-content-center align-self-center h-100">
+                <div class="col-12 col-xl-10">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6 my-auto">
+                            <label>Sign up For <strong>Newsletter:</strong></label>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-6 my-auto">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="block-navigation">
+        <a href="javascript:;" class="btn btn-secondary back-to-top"><i class="fas fa-angle-up"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="logo">
+                        <a href="#"><img src="~/Uploads/@codinBit.Logo" width="" height="" alt="" /></a>
+                    </div>
+                    <p class="info">
+                        @codinBit.Text
+                        <ul class="social">
+                            @foreach (var sl in socialLinks)
+                            {
+                                <li><a href="@sl.Url" target="_blank"><i class="fab fa-@sl.Icon" aria-hidden="true"></i></a></li>
+                            }
+
+
+                        </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="block-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="https://www.codinbit.com/">  @codinBit.EndText</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

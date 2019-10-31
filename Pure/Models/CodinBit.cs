@@ -17,16 +17,10 @@ namespace Pure.Models
         [Column(TypeName ="ntext")]
         public string Text { get; set; }
 
-        [Required,MaxLength(50)]
-        public string Title { get; set; }
-
-        [Required,MaxLength(100)]
-        public string  UrlLink { get; set; }
-
-        [Required,MaxLength(100)]
-        public string Icon { get; set; }
 
         [MaxLength(100)]
         public string EndText { get; set; }
+
+       
     }
 }

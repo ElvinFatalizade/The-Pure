@@ -82,5 +82,13 @@ C:\Users\user\source\repos\Pure\Pure\bin\roslyn\System.Runtime.InteropServices.R
 C:\Users\user\source\repos\Pure\Pure\bin\roslyn\System.Threading.Tasks.Extensions.dll
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.Init.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.csproj.GenerateResource.cache
-C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.csprojAssemblyReference.cache
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.Modelsupdate.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.UpdateDatabse.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.UpdateDatabase.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.database1.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.data0.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations._class.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.choose.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.newclass.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.newmodel.resources

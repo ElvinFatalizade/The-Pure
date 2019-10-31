@@ -1,7 +1,7 @@
 ﻿@model  Homepage
 
 @{
-    ViewBag.Title = "Home Page";
+   List <ChooseCategory> chooseCategory = ViewBag.ChooseCategory as List<ChooseCategory>;
 }
 
 <div class="page-loader loading">
@@ -42,7 +42,7 @@
                                 <h3 class="heading">Great. Wherein.</h3>
                                 <p class="caption-header">Form he void she'd grass. Can't, greater air be firmament hath. Him days. Fowl signs. <br>His first whales the us which first had heaven them first above he wherein.</p>
                             </div>
-                            <a href="view-listing.html" class="btn btn-primary">View ad</a>
+                            <a href="@Url.Action("index","viewlisting")" class="btn btn-primary">View ad</a>
                         </div>
                     </div>
                 </div>
@@ -70,24 +70,23 @@
                                                 <input type="text" class="form-control" placeholder="Location" value="">
                                             </div>
                                         </div>
+
                                         <div class="col-12 col-md-4">
                                             <div class="form-group icon">
                                                 <i class="fa fa-bars" aria-hidden="true"></i>
+
                                                 <select>
                                                     <option>Choose Category</option>
-                                                    <option value="1">Auto, Moto</option>
-                                                    <option value="2">Real Estate</option>
-                                                    <option value="3">Electronics and appliances</option>
-                                                    <option value="4">Fashion</option>
-                                                    <option value="5">Home &amp; Garden</option>
-                                                    <option value="6">Mother &amp; Child</option>
-                                                    <option value="7">Sport, Hobby &amp; Art</option>
-                                                    <option value="8">Pets</option>
-                                                    <option value="9">Jobs</option>
-                                                    <option value="10">Plane Tickets</option>
+                                                    @foreach (var item in chooseCategory)
+                                                    {
+                                                        <option value="@item.Id">@item.Name</option>
+                                                    }
                                                 </select>
+
                                             </div>
                                         </div>
+
+
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-2">
@@ -97,109 +96,35 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="category-list">
-                            <div class="row">
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-list.html">
-                                            <span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>
-                                            <h6>Auto, Moto</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (1125)
-                                        </span>
+                       
+                            <div class="category-list">
+
+                                <div class="row">
+                                    @foreach (var item in Model.Categories)
+                                    {
+                                        <div class="col-4 col-md-3 col-lg-3">
+
+                                            <div class="item">
+                                                <a href="@Url.Action("index","viewlisting")">
+
+                                                    <span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>
+                                                    <h6>@item.Name</h6>
+                                                </a>
+                                                <span class="counter">
+                                                    (@item.Rewies)
+                                                </span>
+                                            </div>
+                                            
+
+
+                                        </div>
+                                    }
+
                                     </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-list-2.html">
-                                            <span class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
-                                            <h6>Fashion</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (621)
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-list.html">
-                                            <span class="icon"><i class="fa fa-child" aria-hidden="true"></i></span>
-                                            <h6>Mother & Child</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (113)
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-list-2.html">
-                                            <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                                            <h6>Jobs</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (325)
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-map.html">
-                                            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                                            <h6>Real Estate</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (2537)
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-list.html">
-                                            <span class="icon"><i class="fa fa-paw" aria-hidden="true"></i></span>
-                                            <h6>Pets</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (252)
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-list-2.html">
-                                            <span class="icon"><i class="fa fa-bicycle" aria-hidden="true"></i></span>
-                                            <h6>Sport</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (755)
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3 d-md-none">
-                                    <div class="item empty">
-                                        <a href="category-list.html">
-                                            <span class="icon"></span>
-                                            <h6></h6>
-                                        </a>
-                                        <span class="counter">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-3 col-lg-3">
-                                    <div class="item">
-                                        <a href="category-list.html">
-                                            <span class="icon"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-                                            <h6>More</h6>
-                                        </a>
-                                        <span class="counter">
-                                            (+10)
-                                        </span>
-                                    </div>
-                                </div>
+                                
                             </div>
+                        
                         </div>
-                    </div>
                 </div>
             </div>
         </div>

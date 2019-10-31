@@ -1,4 +1,4 @@
-﻿
+﻿@model Homepage
 @{
     ViewBag.Title = "Index";
 }
@@ -52,16 +52,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="boxed-container my-account">
-                            <div class="account-nav">
-                                <ul class="subnav justify-content-center align-self-center h-100">
-                                    <li class="my-auto"><a href="my-account-my-listing.html">My Ads</a></li>
-                                    <li class="my-auto active"><a href="my-account-favorites.html">Favorite Ads</a></li>
-                                    <li class="my-auto"><a href="my-account-inbox.html">Inbox</a></li>
-                                    <li class="my-auto"><a href="my-account-invoice.html">Invoices</a></li>
-                                    <li class="my-auto"><a href="my-account-info.html">Account Info</a></li>
-                                    <li class="my-auto"><a href="my-account-store.html">Store Settings</a></li>
-                                </ul>
-                            </div>
+                           
                             <div class="account-nav-mobile">
                                 <ul>
                                     <li class=""><a href="javascript:;" data-toggle="collapse" data-target="#menu-options" aria-expanded="false" class="collapsed">My Ads</a></li>
@@ -93,58 +84,34 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <ul>
-                                            <li class="image"><span class="image-holder"><img class="lazyloaded" src="/Public/images/products/1000X675_vespa.jpg" data-src="#" alt=""></span></li>
-                                            <li class="name">
-                                                <span class="name-holder"><a href="view-listing.html">Vespa</a></span>
-                                                <div class="d-lg-none">
-                                                    <span class="data-holder">15.07.2018</span>
-                                                </div>
-                                            </li>
-                                            <li class="data"><span class="data-holder">15.07.2018</span></li>
-                                            <li class="actions">
-                                                <ul>
-                                                    <li><a href="view-listing.html" class="btn btn-primary"><i class="far fa-eye"></i> View</a></li>
-                                                    <li><a href="#" class="btn btn-default"><i class="far fa-trash-alt"></i> Delete</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        @foreach (var item in Model.Favirites)
+                                        {
+                                            <ul>
+
+                                                <li class="image"><span class="image-holder"><img class="lazyloaded" src="/Uploads/@item.Photo" data-src="#" alt=""></span></li>
+                                                <li class="name">
+                                                    <span class="name-holder"><a href="@Url.Action("index", "viewlisting")">@item.Name</a></span>
+                                                    <div class="d-lg-none">
+                                                        <span class="data-holder">@item.Date.ToString("mm/dd/yyyy")</span>
+                                                    </div>
+                                                </li>
+                                                <li class="data"><span class="data-holder">@item.Date.ToString("mm/dd/yyyy")</span></li>
+                                                <li class="actions">
+                                                    <ul>
+                                                        <li><a href="view-listing.html" class="btn btn-primary"><i class="far fa-eye"></i> View</a></li>
+                                                        <li><a href="#" class="btn btn-default"><i class="far fa-trash-alt"></i> Delete</a></li>
+                                                    </ul>
+                                                </li>
+                                                
+
+                                            </ul>
+                                        }
+                                        </li>
+                                    <li>
+                                       
                                     </li>
                                     <li>
-                                        <ul>
-                                            <li class="image"><span class="image-holder"><img class="lazyloaded" src="/Public/images/products/1000X675_pants.jpg" data-src="#" alt=""></span></li>
-                                            <li class="name">
-                                                <span class="name-holder"><a href="view-listing.html">Lee Cooper Pants</a></span>
-                                                <div class="d-lg-none">
-                                                    <span class="data-holder">11.12.2017</span>
-                                                </div>
-                                            </li>
-                                            <li class="data"><span class="data-holder">11.12.2017</span></li>
-                                            <li class="actions">
-                                                <ul>
-                                                    <li><a href="view-listing.html" class="btn btn-primary"><i class="far fa-eye"></i> View</a></li>
-                                                    <li><a href="#" class="btn btn-default"><i class="far fa-trash-alt"></i> Delete</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
-                                            <li class="image"><span class="image-holder"><img class="lazyloaded" src="/Public/images/products/1000X675_iphone.jpg" data-src="#" alt=""></span></li>
-                                            <li class="name">
-                                                <span class="name-holder"><a href="view-listing.html">Iphone S6</a></span>
-                                                <div class="d-lg-none">
-                                                    <span class="data-holder">03.15.2018</span>
-                                                </div>
-                                            </li>
-                                            <li class="data"><span class="data-holder">03.15.2018</span></li>
-                                            <li class="actions">
-                                                <ul>
-                                                    <li><a href="view-listing.html" class="btn btn-primary"><i class="far fa-eye"></i> View</a></li>
-                                                    <li><a href="#" class="btn btn-default"><i class="far fa-trash-alt"></i> Delete</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                     
                                     </li>
                                 </ul>
                                 <div class="row">
@@ -172,7 +139,7 @@
 
 
  @{
-     Html.RenderPartial("~/Views/Shared/_MyProduct.cshtml");
+     Html.RenderPartial("~/Views/Shared/_Footer.cshtml");
  }
 
 

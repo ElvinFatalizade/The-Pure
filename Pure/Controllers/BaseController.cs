@@ -18,6 +18,8 @@ namespace Pure.Controllers
 
             ViewBag.SocialLink = _context.SocialLinks.OrderBy(sl => sl.OrderBy).ToList();
             ViewBag.Setting = _context.Settings.FirstOrDefault();
+            ViewBag.CodinBit = _context.CodinBits.FirstOrDefault();
+            ViewBag.ChooseCategory = _context.ChooseCategories.OrderBy(z => z.Id).ToList();
         }
     }
 }

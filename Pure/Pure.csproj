@@ -154,10 +154,45 @@
     <Compile Include="Migrations\201910271121164_Models update.Designer.cs">
       <DependentUpon>201910271121164_Models update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910280702244_Update Databse.cs" />
+    <Compile Include="Migrations\201910280702244_Update Databse.Designer.cs">
+      <DependentUpon>201910280702244_Update Databse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910280816014_Update Database.cs" />
+    <Compile Include="Migrations\201910280816014_Update Database.Designer.cs">
+      <DependentUpon>201910280816014_Update Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910280826412_database1.cs" />
+    <Compile Include="Migrations\201910280826412_database1.Designer.cs">
+      <DependentUpon>201910280826412_database1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910280855132_data0.cs" />
+    <Compile Include="Migrations\201910280855132_data0.Designer.cs">
+      <DependentUpon>201910280855132_data0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910280931183_class.cs" />
+    <Compile Include="Migrations\201910280931183_class.Designer.cs">
+      <DependentUpon>201910280931183_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910281106553_choose.cs" />
+    <Compile Include="Migrations\201910281106553_choose.Designer.cs">
+      <DependentUpon>201910281106553_choose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910281213241_newclass.cs" />
+    <Compile Include="Migrations\201910281213241_newclass.Designer.cs">
+      <DependentUpon>201910281213241_newclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910311811504_new model.cs" />
+    <Compile Include="Migrations\201910311811504_new model.Designer.cs">
+      <DependentUpon>201910311811504_new model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Ads.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\ChooseCategory.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\CodinBit.cs" />
+    <Compile Include="Models\Favirites.cs" />
     <Compile Include="Models\Popular.cs" />
     <Compile Include="Models\Promoted.cs" />
     <Compile Include="Models\Recent.cs" />
@@ -864,6 +899,7 @@
     <Content Include="Views\ViewListing\Index.cshtml" />
     <Content Include="Views\BlogArticle\Index.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -887,6 +923,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910271121164_Models update.resx">
       <DependentUpon>201910271121164_Models update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910280702244_Update Databse.resx">
+      <DependentUpon>201910280702244_Update Databse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910280816014_Update Database.resx">
+      <DependentUpon>201910280816014_Update Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910280826412_database1.resx">
+      <DependentUpon>201910280826412_database1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910280855132_data0.resx">
+      <DependentUpon>201910280855132_data0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910280931183_class.resx">
+      <DependentUpon>201910280931183_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910281106553_choose.resx">
+      <DependentUpon>201910281106553_choose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910281213241_newclass.resx">
+      <DependentUpon>201910281213241_newclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910311811504_new model.resx">
+      <DependentUpon>201910311811504_new model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
