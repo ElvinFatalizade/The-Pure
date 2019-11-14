@@ -13,5 +13,7 @@ namespace Pure.Controllers
         {
             return View();
         }
+
+      
     }
 }

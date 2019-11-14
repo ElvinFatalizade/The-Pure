@@ -186,6 +186,26 @@
     <Compile Include="Migrations\201910311811504_new model.Designer.cs">
       <DependentUpon>201910311811504_new model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911020741117_new cass.cs" />
+    <Compile Include="Migrations\201911020741117_new cass.Designer.cs">
+      <DependentUpon>201911020741117_new cass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911030345438_rerer.cs" />
+    <Compile Include="Migrations\201911030345438_rerer.Designer.cs">
+      <DependentUpon>201911030345438_rerer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911030416072_change.cs" />
+    <Compile Include="Migrations\201911030416072_change.Designer.cs">
+      <DependentUpon>201911030416072_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911030418342_change1.cs" />
+    <Compile Include="Migrations\201911030418342_change1.Designer.cs">
+      <DependentUpon>201911030418342_change1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911131159038_init12.cs" />
+    <Compile Include="Migrations\201911131159038_init12.Designer.cs">
+      <DependentUpon>201911131159038_init12.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Ads.cs" />
     <Compile Include="Models\Category.cs" />
@@ -195,6 +215,7 @@
     <Compile Include="Models\Favirites.cs" />
     <Compile Include="Models\Popular.cs" />
     <Compile Include="Models\Promoted.cs" />
+    <Compile Include="Models\Post.cs" />
     <Compile Include="Models\Recent.cs" />
     <Compile Include="Models\Setting.cs" />
     <Compile Include="Models\SocialLink.cs" />
@@ -900,6 +921,8 @@
     <Content Include="Views\BlogArticle\Index.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Post\Details.cshtml" />
+    <Content Include="Views\Post\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -947,6 +970,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910311811504_new model.resx">
       <DependentUpon>201910311811504_new model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911020741117_new cass.resx">
+      <DependentUpon>201911020741117_new cass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911030345438_rerer.resx">
+      <DependentUpon>201911030345438_rerer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911030416072_change.resx">
+      <DependentUpon>201911030416072_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911030418342_change1.resx">
+      <DependentUpon>201911030418342_change1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911131159038_init12.resx">
+      <DependentUpon>201911131159038_init12.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

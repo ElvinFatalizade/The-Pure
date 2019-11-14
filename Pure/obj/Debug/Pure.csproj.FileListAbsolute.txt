@@ -64,7 +64,6 @@ C:\Users\user\source\repos\Pure\Pure\bin\System.Web.WebPages.Razor.xml
 C:\Users\user\source\repos\Pure\Pure\bin\Newtonsoft.Json.xml
 C:\Users\user\source\repos\Pure\Pure\bin\Antlr3.Runtime.pdb
 C:\Users\user\source\repos\Pure\Pure\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.csproj.CopyComplete
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.dll
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.pdb
@@ -92,3 +91,8 @@ C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations._class.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.choose.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.newclass.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.newmodel.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.newcass.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.rerer.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.change.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.change1.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.init12.resources

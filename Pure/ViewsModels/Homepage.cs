@@ -8,8 +8,8 @@ namespace Pure.ViewsModels
 {
     public class Homepage
     {
-        public List <Ads> Ads { get; set; }
-
+        public List<Ads> Ads { get; set; }
+       
         public List <Client> Clients { get; set; }
 
         public List <Popular> Populars { get; set; }
@@ -25,5 +25,7 @@ namespace Pure.ViewsModels
         public List <Category> Categories { get; set; }
 
         public List <Favirites> Favirites { get; set; }
+
+        public List <Post> Posts { get; set; }
     }
 }

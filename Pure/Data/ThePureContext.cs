@@ -1,8 +1,7 @@
-﻿using System;
+﻿using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Data.Entity;
 using Pure.Models;
 
 namespace Pure.Data
@@ -35,6 +34,8 @@ namespace Pure.Data
         public DbSet <Category> Categories { get; set; }
 
         public DbSet <Favirites> Favirites { get; set; }
+
+        public DbSet <Post> Posts { get; set; }
 
 
     }
