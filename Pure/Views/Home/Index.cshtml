@@ -148,7 +148,7 @@
                                         <div class="excerpt">
                                            @item.Text
                                         </div>
-                                        <a href="@Url.Action("index","viewstore")" class="btn btn-primary">@item.LinkName</a>
+                                        <a href="@Url.Action("index","viewstore", new { stoId = item.Id })" class="btn btn-primary">@item.LinkName</a>
                                     </div>
                                 </div>
                             </div>

@@ -22,15 +22,10 @@ namespace Pure.Controllers
                 ChooseCategories =_context.ChooseCategories.OrderBy(c=> c.Id).ToList(),
                 Categories =_context.Categories.OrderBy(c=> c.Id).ToList(),
                 Posts = _context.Posts.OrderBy(c=> c.Id).ToList()
-               
-                
-               
-                
+                   
             };
 
             return View(model);
-        }
-
-      
+        }  
     }
 }

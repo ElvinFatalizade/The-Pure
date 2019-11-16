@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Pure.ViewsModels;
+using Pure.Data;
+using Pure.Models;
 
 namespace Pure.Controllers
 {
@@ -11,7 +14,20 @@ namespace Pure.Controllers
         // GET: ViewStore
         public ActionResult Index()
         {
-            return View();
+            Homepage homepage = new Homepage
+            {
+                Promoteds = _context.Promoteds.OrderByDescending(m => m.Id).ToList(),
+                                          
+        };
+            return View(homepage);
         }
+
+        public ActionResult Create(int stoId)
+        {
+            ViewStore hn = _context.ViewStores.Find(stoId);
+
+            return View(hn);
+        }
+        
     }
 }

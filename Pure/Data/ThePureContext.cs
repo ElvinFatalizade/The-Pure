@@ -37,6 +37,8 @@ namespace Pure.Data
 
         public DbSet <Post> Posts { get; set; }
 
+        public DbSet <ViewStore> ViewStores { get; set; }
+
 
     }
 }

@@ -27,5 +27,7 @@ namespace Pure.ViewsModels
         public List <Favirites> Favirites { get; set; }
 
         public List <Post> Posts { get; set; }
+
+        public List <ViewStore> viewStores { get; set; }
     }
 }

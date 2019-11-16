@@ -96,3 +96,6 @@ C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.rerer.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.change.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.change1.resources
 C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.init12.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.init11.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.smtp.resources
+C:\Users\user\source\repos\Pure\Pure\obj\Debug\Pure.Migrations.smtp1.resources
