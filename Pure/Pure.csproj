@@ -128,7 +128,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogArticleController.cs" />
-    <Compile Include="Controllers\Contact1Controller.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\FavoritesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -218,6 +217,10 @@
     <Compile Include="Migrations\201911161501503_smtp1.cs" />
     <Compile Include="Migrations\201911161501503_smtp1.Designer.cs">
       <DependentUpon>201911161501503_smtp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911201733272_change11.cs" />
+    <Compile Include="Migrations\201911201733272_change11.Designer.cs">
+      <DependentUpon>201911201733272_change11.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Ads.cs" />
@@ -1010,6 +1013,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911161501503_smtp1.resx">
       <DependentUpon>201911161501503_smtp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911201733272_change11.resx">
+      <DependentUpon>201911201733272_change11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

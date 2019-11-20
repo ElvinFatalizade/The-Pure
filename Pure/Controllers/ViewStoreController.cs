@@ -22,12 +22,7 @@ namespace Pure.Controllers
             return View(homepage);
         }
 
-        public ActionResult Create(int stoId)
-        {
-            ViewStore hn = _context.ViewStores.Find(stoId);
-
-            return View(hn);
-        }
+       
         
     }
 }

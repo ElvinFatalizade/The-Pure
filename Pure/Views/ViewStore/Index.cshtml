@@ -1,4 +1,4 @@
-﻿@model  ViewStore
+﻿@model  Homepage
 @{
     ViewBag.Title = "Index";
 }
@@ -49,14 +49,13 @@
                                             <div class="col-12">
                                                 <div class="gallery">
                                                     <div class="slider-single animation-slide height-auto control-nav">
-                                                        @foreach (var item in Model.viewStores)
-                                                        {
+                                                      
                                                             <div class="slider-item">
                                                                 <div class="image" style="background-image: url('/Public/images/stores/2000X1125_store-slider-1.jpg');">
-                                                                    <img src="~/Uploads/@item.Photo" alt="" />
+                                                                    @*<img src="" alt="" />*@
                                                                 </div>
                                                             </div>
-                                                        }
+                                                        
 
 
                                                     </div>
@@ -71,15 +70,13 @@
                                                 <li>
                                                     <span class="user-details-wrapper">
                                                         <span class="user-details">
-                                                            @foreach (var item in Model.viewStores)
-                                                            {
+                                                            
                                                                 <span class="user-img">
                                                                     <span class="avatar text-center">
-                                                                        <img src="~/Uploads/@item.Logo">
+                                                                        @*<img src="~/Uploads/@item.Logo">*@
                                                                     </span>
                                                                 </span>
                                                             }
-
                                                             <span class="user-name">
                                                                 <span class="name">
                                                                     Jaguar Auto
